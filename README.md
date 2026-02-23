@@ -1,2 +1,2 @@
 # portfolio-WebDev 
-Em processo de produção.
+Portfólio apresentando minhas habilidades e competências.
