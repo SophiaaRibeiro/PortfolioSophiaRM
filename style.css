@@ -40,7 +40,14 @@ body, html{
     display: flex;
     flex-direction: column;
     min-height: 100vh;  
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
+   background: linear-gradient(
+    135deg,
+    #1e1e2f,
+    #2b2b5e,
+    #4b3b8f
+  );
+  background-attachment: fixed;
     /* background-image: url('img/fundo-tech-azul.png'); */
     background-size: cover;
     background-position: center;
@@ -52,7 +59,7 @@ body, html{
 .hero {
  /* width: 50%;
   height: 50vh; */
- background-image: url('img/fundo-img-clara.png'); 
+ /* background-image: url('img/fundo-img-clara.png');  */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -63,13 +70,20 @@ body, html{
   padding: 50px; 
 }
 
-h1{
+h1 {
   color:var(--bege-claro);
   display: inline-block;
-  font-size: 70px;
+  font-size: 4.4rem;
   text-align: center;
   font-family: var(--fonte-principal);
  
+}
+
+h2{
+  font-size: 2.8rem;
+  color:#cfcfca;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-text {
@@ -101,7 +115,7 @@ h1{
     padding: 60px 10%;
     font-size: 20px;
     /* margin: 20px;   */
-    background-color: var(--bege);
+    /* background-color: var(--bege); */
 }
 
 .container-logo{
@@ -120,7 +134,7 @@ h1{
 
 .container-curriculo {
   width: 100%;                
-  background-color: var(--bege-acinzentado);
+  /* background-color: var(--bege-acinzentado); */
   padding: 40px 0;            
 }
 
@@ -165,10 +179,10 @@ h1{
     font-family: var(--fonte-principal);   
     text-align: center;   
     justify-content: center;    
-    gap: 20px;   
+    gap: 6rem;   
     padding: 10px 0;
     z-index: 1000;    
-    background-color: var(--Azul-esverdeado);
+    /* background-color: var(--Azul-esverdeado); */
 }
 
 
@@ -234,16 +248,18 @@ footer{
 .secao-projetos{
   text-align: center;
   padding: 40px;
-  background-color: var(--bege-acinzentado);   
+  /* background-color: var(--bege-acinzentado);    */
 }
+
+
 
 .container-projetos{
     display: flex;
-    flex-wrap: wrap; /* Faz quebrar para a próxima linha se necessário */
+    /* flex-wrap: wrap; Faz quebrar para a próxima linha se necessário */
     justify-content: center; /* Centraliza os itens na linha */
     gap: 20px; /* Espaçamento entre os itens */
     margin-top: 20px;
-    padding: 0 15%;
+    /* padding: 0 15%; */
 }
 
 .container-projetos a{
@@ -256,10 +272,11 @@ footer{
 
 .projeto{
     border-radius: 10px;
-    background-color: var(--laranja-suave);
-    width: 300px;  /* Largura fixa para alinhar os cards */
+    background: linear-gradient(45deg, #3b82f6, #7c3aed);
+    width: 100%;  
+    height: auto;/* Largura fixa para alinhar os cards */
     text-align: left;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     transition: transform 0.2s; /* Transição suave para o efeito hover */
     flex-direction: column;     /* Coloca os elementos em coluna */
@@ -267,27 +284,28 @@ footer{
   }
 
 .projeto-titulo{
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-left: 15px;
-    color: var(--preto);
+    color: var(--branco);
     font-weight: bold;
 }
 
 .projeto-explicacao{
-    font-size: 16px;
-    color: var(--marrom-escuro);
+    font-size: 1.3rem;
+    color: var(--areia-suave);
     margin-top: 10px;
 }
 
 .projeto-tecnologia{
-    font-size: 14px;
-    color: var(--marrom-escuro);
+    font-size: 1.3rem;
+    color: var(--bege-acinzentado);
 }
 
-.projeto-link{
+.projeto-link{  
+  background-color: var(--Azul-petróleo) ;
     text-decoration: none;
-    color: var(--bege-acinzentado);
-    font-size: 14px;
+    color: var(--Azul-esverdeado);
+    font-size: 1.3rem;
     margin-top: auto; /* Empurra esse link para o final do container */
 }
 
@@ -298,7 +316,7 @@ footer{
 
 
 .botao-curriculo{
-    background-color: var(--laranja-suave);
+    background-color: var(--cinza);
     color: var(--preto);
     padding: 10px 20px;
     border: none;
@@ -329,7 +347,7 @@ footer{
 }
 
 .filtros button {
-  background-color: var(--bege);
+  background: linear-gradient(45deg, #ae6ace, #445fb9);
   color: var(--preto);
   border: none;
   padding: 10px 15px;
@@ -377,7 +395,7 @@ footer{
 
 .conhecimentos-section {
   padding: 50px; 
-  background-color: var(--areia-suave);
+  /* background-color: var(--areia-suave); */
 }
 
 .conhecimento {
@@ -399,7 +417,7 @@ footer{
 }
 
 .caixinha-conhecimento {
-  background-color: var(--cinza-azulado);
+  background: linear-gradient(45deg, #ae6ace, #445fb9);
   padding: 20px;
   width: 280px;
   border-radius: 10px;
@@ -449,7 +467,7 @@ footer{
 }
 
 .container-form{    
-  background-color: var(--areia-suave);
+  /* background-color: var(--areia-suave); */
   text-align: center;
   color: var(--preto);
 }
