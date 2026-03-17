@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width-width=device-width, initial-scale=1.0/">
+        <meta name="viewpoint" content="width-width=device-width, initial-scale=1.0">
         <title> Portfólio Sophia Ribeiro Mendonça | Dev </title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,305 +12,122 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>       
-        <header class="cabecalho">            
-            <nav class="menu-cabecalho" id="menuCabecalho">                  
-            <img class="foto-perfil" src="img/ft-circulo.png" alt="Sophia Ribeiro Mendonça"  width="100" height="100">
-            <a href="#home" class="active">Home</a>  
-            <!-- <a href="#sobremim">Sobre Mim</a>   -->
-            <a href="#conhecimentos">Conhecimentos</a>        
+    <header class="cabecalho">
+
+    <div class="logo">
+        <p>&lt;SophiaMendonça/&gt;</p>
+    </div>
+
+   <div class="nav-direita">
+
+        <nav class="menu">
+            <a href="#home" class="active">Home</a>
+              <a href="#sobre">Sobre Mim</a>
+            <a href="#conhecimentos">Conhecimentos</a>
             <a href="#projetos">Projetos</a>
-            <a href="#certificados" >Certificados</a>
-            <a href="#curriculo">Currículo</a>          
-            <a href="#contato">Contato</a>     
+            <a href="#skills">Soft Skills</a>
+            <a href="#curriculo">Currículo</a>
         </nav>
-        </header>
-        <section class="hero" id="home">            
-            <div class="hero-text">              
-            <h1>Seja bem-vindo(a) ao meu portfólio!</h1>    
+
+        <a href="#contato" class="btn-contato">
+            Contato
+        </a>
+
+    </div>
+
+</header>
+
+<section class="home">
+
+    <div class="foto-container">
+        <img src="img/foto-perfil.jpg" alt="Minha foto">
+    </div>
+
+    <div class="info-container">
+
+        <h1>
+            Olá, me chamo 
+            <span class="titulo-gradiente">
+                Sophia Ribeiro Mendonça
+            </span>
+        </h1>
+
+        <h2 class="web">Desenvolvedora Web</h2>
+
+        <p class="descricao">
+            Trabalho na área de Front End e adoro resolver problemas com tecnologia
+            e criar experiências digitais que realmente façam diferença.
+        </p>
+
+        <div class="botoes-redes">
+
+            <a href="#projetos" class="btn-projetos">
+                Ver Projetos
+            </a>
+
+            <div class="links-container">
+
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="far fa-file-alt"></i></a>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="sobre" id="sobre">
+
+    <h2 class="titulo-sobre">
+    Sobre <span>Mim</span>
+    </h2>
+
+    <div class="sobre-container">
+
+        <div class="sobre-ilustracao">
+            <!-- aqui pode ir sua foto ou svg -->
+        </div>
+
+        <div class="sobre-cards">
+
+            <div class="card-sobre">
+                <h3>💻 Eu atuo</h3>
                 <p>
-                Aqui você encontrará informações sobre mim, meus projetos, conhecimentos, e muito mais. Fique à vontade para explorar!<br></p>
-                <p> Sempre aberta a novas oportunidades e colaborações. Se você tiver alguma dúvida ou quiser entrar em contato, não hesite em me procurar!<br></p>                        
-                <p>Aproveite!</p>
-               
-            <div class="container-botao">                
-                <a class = "botoes" href = "https://www.github.com/SophiaaRibeiro/" target="_blank"><img src="img/github.png" width="50" height="50" alt="icone do GitHub do icons8"></a><br>
-                <a class = "botoes" href = "https://www.linkedin.com/in/sophia-r-mendonça-95105a252/" target="_blank"><img src="img/linkedin.png" width="50" height="50" alt="icone do Linkedin do icons8"></a><br>
-                <a class = "botoes" href = "https://www.instagram.com/sophia.mribeiro/" target="_blank"><img src="img/instagram.png" width="50" height="50" alt="icone do Instagram do icons8"></a><br>
-                <a class = "botoes" href ="https://wa.me/5513991131895" target="_blank"><img src="img/icons8-whatsapp-50.png" alt="icone do WhatsApp do icons8"></a>
-            </div> 
-            </div>   
-        </section>
-
-        <!-- <section class="secao-faq"  id="sobremim">          
-                <div class="galeria-fotos">
-                    <figure class="gallery__item  gallery__item--1">
-                        <img src="img/ft perfil git.jpg" class="gallery__img" alt="img 1"> 
-                    </figure>                
-                    <figure  class="gallery__item  gallery__item--2">
-                    <img src="img/cappuciono.jpg" class="gallery__img" alt="img 2"> 
-                    </figure>                    
-                    <figure class="gallery__item gallery__item--3">
-                    <img src="img/estudos.jpg" class="gallery__img" alt="img 3"> 
-                    </figure>                        
-                    <figure  class="gallery__item  gallery__item--4">
-                        <img src="img/img-html.png" class="gallery__img" alt="img 4"> 
-                    </figure>
-                </div>
-
-            <div class="container-perguntas">
-            <div class="bloco-pergunta">
-                <button class="btn-pergunta-sobremim">Quem sou eu?
-                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                </button>
-                    <div class="resposta-pergunta">
-                    <p>Olá, me chamo Sophia, atualmente tenho 20 anos, e sou estudante de Sistemas para Internet, tenho experiência prática em desenvolvimento web 
-                        com HTML, CSS, Bootstrap, C#, JavaScript e SQL em ambiente profissional. No dia a dia, atuo na criação e manutenção de views em MVC utilizando C#, 
-                         na manipulação de dados e melhorias de interfaces.</p>
-                    </div>
+                Como desenvolvedora criando interfaces modernas
+                e funcionais com foco em organização, clareza
+                e experiência do usuário.
+                </p>
             </div>
 
-            <div class="bloco-pergunta">
-                <button class="btn-pergunta-sobremim">O que mais gosto de fazer no tempo livre?
-                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                </button>
-                    <div class="resposta-pergunta">
-                    <p>No meu tempo livre, adoro de ler livros, assistir a séries e filmes, e passar tempo com minha família e amigos. 
-                        Além disso, sou apaixonada por café da tarde e adoro descobrir novas cafeterias na cidade.</p>
-                </div>  
-            </div>                                   
-
-            <div class="bloco-pergunta">
-                <button class="btn-pergunta-sobremim">Qual meu objetivo?
-                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                </button>
-                    <div class="resposta-pergunta">
-                        <p>Atualmente estou estudando Gestão de Projetos e, ao mesmo tempo, me desenvolvendo para atuar como programadora full stack. Meu objetivo é unir conhecimento em tecnologia e gestão para criar soluções completas, e estou correndo atrás desse sonho todos os dias.</p>
-                    </div>
+            <div class="card-sobre">
+                <h3>📚 Eu possuo</h3>
+                <p>
+                Em HTML, CSS e JavaScript, além de noções
+                de lógica de programação e boas práticas
+                de desenvolvimento.
+                </p>
             </div>
 
-            <div class="bloco-pergunta">
-                <button class="btn-pergunta-sobremim">No que está trabalhando no momento?
-                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                </button>                  
-                <div class="resposta-pergunta">
-                    <p>No momento, estou trabalhando em um site de cafeteria com Bootstrap.</p>
-                </div>
-            </div> 
-            
-            <div class="bloco-pergunta">
-                <button class="btn-pergunta-sobremim">O que te inspira para alcançar seus objetivos e sonhos?
-                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                </button>                  
-                <div class="resposta-pergunta">
-                    <p>A minha maior inspiração vem da minha família, que sempre me apoia e motiva meu crescimento, tanto no âmbito pessoal quanto no profissional. 
-                        Saber que o meu futuro depende do meu esforço me impulsiona a estar em constante aprendizado, buscando evoluir e não ficar para trás. 
-                        Quero, no fim da minha trajetória, olhar para tudo o que conquistei com orgulho, reconhecendo que os erros fizeram parte do processo e que cada passo valeu a pena.</p>
-                </div>
-            </div> 
+            <div class="card-sobre">
+                <h3>🚀 Eu desejo no futuro</h3>
+                <p>
+                Crescer na área de tecnologia e contribuir
+                com projetos que façam diferença na vida
+                das pessoas.
+                </p>
+            </div>
+
         </div>
-        </section>        -->
-        
-        <section class="conhecimentos-section" id="conhecimentos">  
-            <h2>Tecnologias</h2>                   
-            <div class="filtros">
-              <button onclick="filtrar('todos', this)" class="active">Todos</button>
-              <button onclick="filtrar('frontend', this)">Front-end</button>
-              <button onclick="filtrar('backend', this)">Back-end</button>
-              <button onclick="filtrar('bd', this)">Banco de Dados</button>
-              <button onclick="filtrar('gp', this)">Gestão de Projetos</button>
-            </div>
 
-           
-            <div id="conhecimentos-container" class="container-conhecimentos">
-              <div class="caixinha-conhecimento frontend">
-                <h2>HTML</h2>
-                <p>HTML semântico, formulários, estrutura organizada.</p>
-                <div class="barra"><div class="progresso" data-valor="75"></div></div>
-              </div>
+    </div>
 
-       
-              <div class="caixinha-conhecimento frontend">
-                <h2>CSS</h2>
-                <p>Layouts com Flexbox, Grid, media queries, animações.</p>
-                <div class="barra"><div class="progresso" data-valor="65"></div></div>
-              </div>
-
-          
-              <div class="caixinha-conhecimento frontend">
-                <h2>JavaScript</h2>
-                <p>Manipulação do DOM, lógica, eventos, animações.</p>
-                <div class="barra"><div class="progresso" data-valor="30"></div></div>
-              </div>
-
-            
-              <div class="caixinha-conhecimento backend">
-                <h2>C#</h2>
-                <p>Uso em automações e sistemas web, integração com SQL.</p>
-                <div class="barra"><div class="progresso" data-valor="80"></div></div>
-              </div>
-
-            
-              <div class="caixinha-conhecimento bd">
-                <h2>SQL</h2>
-                <p>Consultas com JOINs, procedures, manipulação real de dados.</p>
-                <div class="barra"><div class="progresso" data-valor="50"></div></div>
-              </div>
-
-              <div class="caixinha-conhecimento frontend">
-                <h2>AJAX</h2>
-                <p>Comunicação assíncrona com o servidor, atualização de conteúdo sem recarregar a página.</p>
-                <div class="barra"><div class="progresso" data-valor="40"></div></div>
-              </div>
-
-              <div class="caixinha-conhecimento frontend">
-                <h2>jQuery</h2>
-                <p>Simplificação da manipulação do DOM, eventos e requisições AJAX.</p>
-                <div class="barra"><div class="progresso" data-valor="40"></div></div>
-              </div>
-
-              <div class="caixinha-conhecimento frontend">
-                <h2>Bootstrap</h2>
-                <p>Desenvolvimento responsivo com componentes prontos, grid system e estilização rápida.</p>
-                <div class="barra"><div class="progresso" data-valor="35"></div></div>
-              </div>
-
-              <div class="caixinha-conhecimento gp">
-                <h2>Scrum</h2>
-                <p>Metodologia ágil para gestão de projetos, com foco em sprints, planejamento e entregas contínuas.</p>
-                <div class="barra"><div class="progresso" data-valor="40"></div></div>
-              </div>
-
-              <div class="caixinha-conhecimento gp">
-                <h2>Kanban</h2>
-                <p>Organização de tarefas com quadros visuais, priorização de fluxos e melhoria de processos.</p>
-                <div class="barra"><div class="progresso" data-valor="80"></div></div>
-              </div>
-
-              <div class="caixinha-conhecimento bd">
-                <h2>Excel</h2>
-                <p>Criação de planilhas, fórmulas, tabelas dinâmicas e análise de dados.</p>
-                <div class="barra"><div class="progresso" data-valor="60"></div></div>
-              </div>
-
-            </div>
-    </section>
-
-    <section class="secao-projetos" id="projetos" class="active">
-        <h2>Projetos realizados, ou em andamento!🙂 </h2>
-                          
-        <ul>
-            <div class="container-projetos"> 
-                <div class="projeto">
-                    <li class="projeto-titulo">Portfólio</li>
-                    <p class="projeto-explicacao">↳ Um portfólio que apresenta meus projetos e minha trajetória profissional.</p>
-                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML, CSS e JavaScript</p>
-                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/portfolio-html-css" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="projeto">
-                    <li class="projeto-titulo">Calculadora Windows</li>
-                    <p class="projeto-explicacao">↳ Uma calculadora simples que simula a calculadora do Windows.</p>
-                    <p class="projeto-tecnologia">⤹ Tecnologias: C#</p>
-                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/Calculadora-Windows" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="projeto">
-                    <li class="projeto-titulo">Vida de Café</li>
-                    <p class="projeto-explicacao">↳ Site de uma cafeteria hipotética.</p>
-                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML, CSS, Bootstrap, e JavaScript</p>    
-                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/cafeteria-site" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="projeto">
-                    <li class="projeto-titulo">Primeira Aplicação com JavaScript</li>
-                    <p class="projeto-explicacao">↳ Uma página para praticar JavaScript</p>
-                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML, CSS e JavaScript</p>    
-                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/exercicios-javascript" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="projeto">
-                    <li class="projeto-titulo">Jogo do Número Secreto</li>
-                    <p class="projeto-explicacao">↳ Jogo do número secreto desenvolvido no curso da Alura</p>
-                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
-                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/JogoNumeroSecreto" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="projeto">
-                    <li class="projeto-titulo">Site para uma doceria</li>
-                    <p class="projeto-explicacao">↳ Site desenvolvido para um projeto de curricularização da faculdade.</p>
-                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
-                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/Projeto-Curricularizacao-Doceria" target="_blank">Ver no GitHub</a>
-                </div>
-            </div>             
-        </ul>
-            
-        </div>
-    </section>               
-            
-            <!-- <section class="container-texto" id="certificados">
-                <div class="container-certificados">
-                    <h2>Selecione o tipo de certificado</h2>
-            
-                    <select name="" id="selectCertificados">
-                        <option value="" selected >Selecione uma Área</option> 
-                        </select>
-            
-                    <div id="containerCertificados">
-                        <p>Use o menu acima para filtrar os certificados</p>
-                    </div>
-                </div>
-            </section>          -->
-
-        <section class="container-curriculo" id="curriculo">          
-            <div class="curriculo-conteudo">
-               <h2>Fique á vontade para visualizar ou baixar meu currículo!</h2>
-           
-                   <a class="botao-curriculo"  href="doc/Currículo TI 2025.pdf" download="Currículo TI 2025.pdf">
-                       📥 Baixar Currículo
-                   </a><br><br>
-
-
-               <iframe src="doc/Currículo TI 2025.pdf" >
-                   Seu navegador não suporta visualização de PDF.
-                   </iframe>
-           </div>
-       </section> 
-
-        <section class="container-form" id="contato">          
-            <h2>Entre em contato comigo para saber mais.</h2>
-     
-                <form action="https://formsubmit.co/sophia.mribeiro16@gmail.com" method="POST"  class="formulario-contato">
-                    <label for="nome">Seu nome</label><br>
-                    <input type="text" name="nome" id="nome" size="30" placeholder="Ex: João Paulo" required><br><br>
-
-                    <label for="email">Seu e-mail</label><br>
-                    <input type="text" name="email" id="email" size="30" placeholder="Ex: joao.paulo@email.com" required><br><br>
-
-                    <label for="mensagem">Escreva aqui seu assunto de interesse:</label><br>
-                    <textarea  name="mensagem" placeholder="Sua mensagem" rows="10" cols="40" placeholder="sua mensagem aqui" required> </textarea><br>
-
-                    <!-- Evita spam -->
-                    <input type="hidden" name="_captcha" value="false">
-
-                    <!-- Redireciona após envio -->
-                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-
-                    <button type="submit">Enviar</button>
-                    <button class="limpar" type="reset">Limpar</button>
-
-                </form>
-
-           <p> Muito obrigada pela sua visita. Volte sempre!</p>      
-            <button id="btnTopo">↑</button>
-        <script src="/js/script.js"></script>        
+</section>
+ <script src="/js/script.js"></script>        
         </section>              
         <footer>
             <p>© 2025 SRM. Todos os direitos reservados.</p>
