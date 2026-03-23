@@ -13,31 +13,36 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
-    <body>       
-    <header class="cabecalho">
+<body> 
+              
+<header class="cabecalho">        
 
-    <div class="logo">
-        <p>&lt;SophiaMendonça/&gt;</p>
-    </div>
+        <div class="logo">
+            <p>&lt;SophiaMendonça/&gt;</p>
+        </div>
 
-   <div class="nav-direita">
+        <div class="nav-direita">
 
-        <nav class="menu">
-            <a href="#home" class="active">Home</a>
-              <a href="#sobre">Sobre Mim</a>
-            <a href="#conhecimentos">Conhecimentos</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#skills">Soft Skills</a>
-            <a href="#curriculo">Currículo</a>
-        </nav>
+            <nav class="menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#conhecimentos">Conhecimentos</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#skills">Soft Skills</a>
+                <a href="#curriculo">Jornada</a>
+            </nav>
 
-        <a href="#contato" class="btn-contato">
-            Contato
-        </a>
+            <a href="#contato" class="btn-contato">
+                Contato
+            </a>   
 
-    </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>        
 
+        </div>       
 </header>
 
 <section class="home">
@@ -48,12 +53,15 @@
 
     <div class="info-container">
 
-        <h1>
+        <!-- <h1>
             Olá, me chamo 
             <span class="titulo-gradiente">
                 Sophia Ribeiro Mendonça
             </span>
-        </h1>
+        </h1> -->
+    <h1>
+         Olá, eu sou <span  id="typing" class="titulo-gradiente"></span><span class="cursor" >|</span>
+    </h1>
 
         <h2 class="web">Desenvolvedora Web</h2>
 
@@ -69,11 +77,9 @@
             </a>
 
             <div class="links-container">
-
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-
+                <a href="www.linkedin.com/in/sophia-r-mendonça-95105a252" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SophiaaRibeiro" target="_blank"><i class="fab fa-github"></i></a>                
+                <a href="https://drive.google.com/file/d/1vDjmeUUHYTLulDoSkXdvkIpxgaIo9790/view?usp=sharing" target="_blank"><i class="far fa-file-alt"></i></a>
             </div>
         </div>
 
@@ -83,29 +89,37 @@
 
 <section class="sobre" id="sobre">
 
-    <h2 class="titulo-sobre">
+    <h2 class="titulo-secao">
     Sobre <span>Mim</span>
     </h2>
 
     <div class="sobre-container">
 
         <div class="sobre-ilustracao">
-            <!-- aqui pode ir sua foto ou svg -->
+            <!-- foto ou svg -->
         </div>
 
         <div class="sobre-cards">
 
             <div class="card-sobre">
-                <h3>💻 Eu atuo</h3>
+
+            <div class="icons">
+              <h3><i class="fas fa-laptop"></i> Eu atuo</h3>
+            </div>
+                
                 <p>
                 Como desenvolvedora criando interfaces modernas
                 e funcionais com foco em organização, clareza
                 e experiência do usuário.
                 </p>
+
             </div>
 
             <div class="card-sobre">
-                <h3>📚 Eu possuo</h3>
+                <div class="icons">
+                    <h3><i class="fas fa-book-open"></i> Eu possuo</h3>
+                </div>
+                
                 <p>
                 Em HTML, CSS e JavaScript, além de noções
                 de lógica de programação e boas práticas
@@ -114,7 +128,10 @@
             </div>
 
             <div class="card-sobre">
-                <h3>🚀 Eu desejo no futuro</h3>
+                <div class="icons"> 
+                     <h3><i class="fas fa-rocket"></i> Eu desejo no futuro</h3>
+                </div>
+               
                 <p>
                 Crescer na área de tecnologia e contribuir
                 com projetos que façam diferença na vida
@@ -127,10 +144,373 @@
     </div>
 
 </section>
- <script src="/js/script.js"></script>        
-        </section>              
-        <footer>
-            <p>© 2025 SRM. Todos os direitos reservados.</p>
-        </footer>
-    </body>   
+
+<section class="conhecimentos" id="conhecimentos">
+
+    <h2 class="titulo-secao">
+        Conheci<span>mentos</span>
+    </h2>
+
+    <div class="container-conhecimentos">
+
+        <!-- Front -->
+        <div class="card-conhecimento">
+            <h3>Front <span>End</span></h3>
+
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>React</span>
+            </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-conhecimento">
+            <h3>Back <span>End</span></h3>
+
+            <div class="tags">
+                <span>C#</span>
+                <span>.NET</span>
+                <span>PHP</span>
+            </div>
+        </div>
+
+        <!-- Banco -->
+        <div class="card-conhecimento">
+            <h3>Banco de <span>Dados</span></h3>
+
+            <div class="tags">
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>Oracle</span>
+            </div>
+        </div>
+
+        <!-- Ferramentas -->
+        <div class="card-conhecimento card-center">
+            <h3>Ferramen<span>tas</span></h3>
+
+            <div class="tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Figma</span>
+                <span>Canva</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="projetos" id="projetos">
+
+    <h2 class="titulo-secao">
+        Proje<span>tos</span>
+    </h2>
+
+    <div class="container-projetos">
+
+        <!-- CARD 1 -->
+        <div class="card-projeto">
+
+            <div class="topo-card">
+                <img src="" alt="">
+            </div>
+
+            <h3>Estacionamento Aliança - Sistema de Estacionamento</h3>
+
+            <p>
+            Aplicação web desenvolvida para apresentar os serviços de um estacionamento,
+            permitindo que usuários conheçam os planos disponíveis e entrem em contato.
+            </p>
+
+            <div class="tecnologias">
+                <span>Tecnologias utilizadas:</span>
+                <div class="icons">
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+
+            <a href="https://github.com/SophiaaRibeiro/EstacionamentoAlianca.git" class="btn-github" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-projeto">
+
+            <div class="topo-card">
+                <img src="" alt="">
+            </div>
+
+            <h3>Tela de Login</h3>
+
+            <p>
+            Interface de login desenvolvida com foco em prática de estilização com CSS,
+            explorando layout responsivo e efeitos visuais modernos.
+            </p>
+
+            <div class="tecnologias">
+                <span>Tecnologias utilizadas:</span>
+                <div class="icons">
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                </div>
+            </div>
+
+            <a href="https://github.com/SophiaaRibeiro/Tela_Login.git" class="btn-github"  target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-projeto">
+
+            <div class="topo-card">
+                <img src="" alt="">
+            </div>
+
+            <h3>ControlProjects - Sistema de Controle de Projetos </h3>
+
+            <p>
+                Um Sistema de Controle de Projetos web desenvolvida com o objetivo de organizar, planejar e acompanhar projetos e tarefas de forma simples e eficiente.
+            
+            <div class="tecnologias">
+                <span>Tecnologias utilizadas:</span>
+                <div class="icons">
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+
+            <a href="https://github.com/SophiaaRibeiro/SistemaControleProjetos.git" class="btn-github"  target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="soft-skills" id="skills">
+
+    <h2 class="titulo-secao">
+        Soft <span>Skills</span>
+    </h2>
+
+    <div class="container-soft">
+
+        <!-- CARD 1 -->
+        <div class="card-soft">
+            <div class="icone">
+                <i class="fas fa-list"></i>
+            </div>
+
+            <h3>Organização</h3>
+
+            <p>
+            Tenho facilidade em estruturar tarefas e projetos de forma clara e planejada,
+            mantendo foco em prazos e qualidade na entrega.
+            </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-soft">
+            <div class="icone">
+                <i class="fas fa-chart-line"></i>
+            </div>
+
+            <h3>Aprendizado Contínuo</h3>
+
+            <p>
+            Gosto de analisar problemas com calma e buscar soluções estruturadas,
+            aplicando lógica e atenção aos detalhes no desenvolvimento.
+            </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-soft">
+            <div class="icone">
+                <i class="fas fa-bolt"></i>
+            </div>
+
+            <h3>Proatividade</h3>
+
+            <p>
+            Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades,
+            procurando evoluir constantemente na área de desenvolvimento.
+            </p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-soft">
+            <div class="icone">
+                <i class="fas fa-users"></i>
+            </div>
+
+            <h3>Trabalho em Equipe</h3>
+
+            <p>
+            Valorizo a troca de conhecimento e acredito que a colaboração é essencial
+            para construir soluções mais eficientes e inovadoras.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="timeline">
+
+    <h2 class="titulo-secao">Minha <span>Jornada</span></h2>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>2023</h3>
+                <p>Início da faculdade de Sistemas para Internet.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>2024</h3>
+                <p>Primeiros projetos em HTML, CSS e JavaScript.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>2025</h3>
+                <p>Experiência em TI com C# e automações.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contato" id="contato">
+
+    <h2 class="titulo-secao">
+        Entre em <span>Contato</span> comigo
+    </h2>
+
+    <div class="container-contato">
+
+        <!-- LADO ESQUERDO -->
+        <div class="info-contato">
+
+            <div class="card-contato">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                    <h4>Linkedin</h4>
+                    <p>linkedin.com/SophiaMendonça</p>
+                </div>
+            </div>
+
+            <div class="card-contato">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h4>Github</h4>
+                    <p>github.com/sophiaRibeiro</p>
+                </div>
+            </div>
+
+            <div class="card-contato">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>E-mail</h4>
+                    <p>sophiamribeiro6@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="form-contato">
+
+            <h3>Me mande uma mensagem</h3>
+
+            <form>
+
+                <label>E-mail</label>
+                <input type="email" placeholder="Seu e-mail">
+
+                <label>Senha</label>
+                <input type="password" placeholder="Sua senha">
+
+                <label>Mensagem</label>
+                <textarea placeholder="Digite sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+      
+            
+<footer class="footer">
+
+    <div class="container-footer">
+
+        <!-- LOGO / NOME -->
+        <div class="footer-left">
+            <h2>&lt;SophiaMendonça/&gt;</h2>
+            <p>Desenvolvedora focada em criar experiências digitais modernas, funcionais e elegantes.</p>
+        </div>
+
+        <!-- LINKS RÁPIDOS -->
+        <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Soft Skills</a></li>
+                <li><a href="#curriculo">Jornada</a></li>
+                <li><a href="#contato">Contato</a></li>            
+            </ul>
+        </div>
+
+        <!-- REDES -->
+        <div class="footer-social">
+            <h3>Redes</h3>
+
+            <div class="icons-social">
+                <a href="www.linkedin.com/in/sophia-r-mendonça-95105a252" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SophiaaRibeiro" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="sophia.mribeiro16@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- LINHA FINAL -->
+    <div class="footer-bottom">
+        <p>© 2026 Sophia Mendonça • Todos os direitos reservados</p>
+    </div>
+
+</footer>
+
+ <script src="/js/script.js"></script>  
+ 
+</body>   
 </html>
