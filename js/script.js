@@ -20,11 +20,37 @@ cards.forEach(card=>{
 observer.observe(card);
 });
 
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".menu a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.clientHeight;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+            link.classList.add("active");
+        }
+    });
+
+});
+
 
 const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
-toggle.addEventListener("click", ()=>{
+toggle.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
 
@@ -74,3 +100,20 @@ function escrever(){
 }
 
 escrever();
+
+const container = document.querySelector(".container-projetos");
+const next = document.querySelector(".btn-next");
+const prev = document.querySelector(".btn-prev");
+
+let scrollPosition = 0;
+
+next.addEventListener("click", () => {
+    scrollPosition += 320;
+    container.style.transform = `translateX(-${scrollPosition}px)`;
+});
+
+prev.addEventListener("click", () => {
+    scrollPosition -= 320;
+    if(scrollPosition < 0) scrollPosition = 0;
+    container.style.transform = `translateX(-${scrollPosition}px)`;
+});

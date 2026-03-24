@@ -57,8 +57,8 @@ body, html{
     flex-direction: column;
     min-height: 100vh;  
     scroll-behavior: smooth; 
-   background: #030417;
-   background-attachment: fixed;
+    background: #030417;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -67,16 +67,6 @@ body, html{
     scroll-behavior: smooth;
 }
 
-.menu-toggle{
-    display:none;
-    font-size:1.8rem;
-    color:white;
-    cursor:pointer;
-}
-
-.menu.active{
-    display:flex;
-}
 
 header{
     display:flex;
@@ -158,6 +148,13 @@ h1 {
     width:100%;
 }
 
+.menu-toggle{
+    display:none;
+    font-size:1.8rem;
+    color:white;
+    cursor:pointer;
+}
+
 .btn-contato{
     background: var(--gradiente-botao);
     color:white;
@@ -180,9 +177,9 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 80px;
-    /* padding: 100px 10%; */
+    padding: 100px 10%;
     width: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 .descricao-home{
@@ -462,6 +459,23 @@ h1{
 
 /* PROJETOS */
 
+.carrossel-container{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.carrossel{
+    overflow:hidden;
+    width:100%;
+}
+
+.container-projetos{
+    display:flex;
+    gap:20px;
+    transition:0.5s;
+}
+
 .projetos{
     padding:120px 10%;
     text-align:center;
@@ -479,15 +493,23 @@ h1{
     border-radius:20px;
     padding:25px;
     text-align:left;
-
+     min-width:300px;
+    flex-shrink:0;
     transition:0.3s;
 }
 
 .topo-card{
-    height:60px;
-    background:#0B0F4A;
+    height:120px; 
     border-radius:15px;
+    overflow:hidden;
     margin-bottom:20px;
+}
+
+.topo-card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover; /* 👈 ESSA É A CHAVE 🔥 */
 }
 
 .card-projeto:hover{
@@ -517,6 +539,21 @@ h1{
     align-items:center;
 }
 
+.btn-prev, .btn-next{
+    background:rgba(255,255,255,0.1);
+    border:none;
+    color:white;
+    font-size:1.5rem;
+    padding:10px;
+    cursor:pointer;
+    border-radius:50%;
+    position:absolute;
+    z-index:10;
+}
+
+.btn-prev{ left:-10px; }
+.btn-next{ right:-10px; }
+
 .icons i{
     margin:10px;
     font-size:1.5rem;
@@ -525,6 +562,16 @@ h1{
 
 i {
     color: var(--azul-principal);
+}
+
+.icons i{
+    font-size:1.5rem;
+    margin-right:10px;
+    transition:0.3s;
+}
+
+.icons i:hover{
+    transform:scale(1.2);
 }
 
 .btn-github{
@@ -626,7 +673,8 @@ i {
 
 .timeline-container{
     position:relative;
-    margin-top:50px;
+    max-width:800px;
+    margin:50px auto;
 }
 
 .timeline-container::before{
@@ -636,7 +684,8 @@ i {
     top:0;
     width:3px;
     height:100%;
-    background:linear-gradient(#6D4AEB, transparent);
+    background:linear-gradient(to bottom, #6a5cff, #00c6ff);
+    transform:translateX(-50%);
 }
 
 .timeline-item{
@@ -939,13 +988,34 @@ i {
 
 @media (max-width:1024px){
 
-    .cabecalho{
-        padding:18px 5%;
+
+    .menu{
+    position:absolute;
+    top:80px;
+    right:20px;
+    background:#050A30;
+    border:1px solid rgba(120,100,255,0.4);
+    border-radius:15px;
+    padding:20px;
+    flex-direction:column;
+    gap:15px;
+    width:200px;
+    display:none; 
     }
+
+    .menu.active{
+        display:flex; 
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
 
     .home{
         gap:40px;
         padding:120px 5%;
+        min-height: 50vh;
     }
 
     .sobre{
@@ -956,47 +1026,48 @@ i {
         gap:40px;
     }
 
+@media (max-width:1024px){
+
+.projetos{
+    padding:100px 5%;
+}
+
+/* container dos cards */
+.container-projetos{
+    grid-template-columns:repeat(2, 1fr);
+    gap:25px;
+}
+
+/* cards mais equilibrados */
+.card-projeto{
+    padding:20px;
+}
+
+/* texto mais confortável */
+.card-projeto p{
+    font-size:0.9rem;
+}
+
+/* tecnologias mais organizadas */
+.tecnologias{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+/* botão github mais bonito */
+.btn-github{
+    padding:12px;
+    border-radius:15px;
+}
+
+}
+    
+
 }
 
 
 @media (max-width:768px) {
-
-    .menu{
-    position:absolute;
-    top:80px;
-    right:20px;
-
-    background:#050A30;
-    border:1px solid rgba(120,100,255,0.4);
-
-    border-radius:15px;
-    padding:20px;
-
-    flex-direction:column;
-    gap:15px;
-
-    width:200px;
-
-    display:none;
-
-    box-shadow:0 0 20px rgba(120,100,255,0.3);
-    }
-
-    .menu a{
-        color:white;
-        text-decoration:none;
-    }
-
-    .menu.active{
-        display:flex;
-    }
-
-    .menu-toggle{
-        display:block;
-        font-size:1.6rem;
-        cursor:pointer;
-        color:white;
-    }
 
     .btn-contato{
         display:none; /* opcional */
