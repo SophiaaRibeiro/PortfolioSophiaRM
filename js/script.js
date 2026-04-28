@@ -70,7 +70,7 @@ toggle.addEventListener("click", () => {
 
 const palavras = [
     "Sophia Ribeiro Mendonça",
-    "Desenvolvedora Front-End",
+    "Estudante de Sistemas para Internet",
 ];
 
 let i = 0;
@@ -105,15 +105,29 @@ const container = document.querySelector(".container-projetos");
 const next = document.querySelector(".btn-next");
 const prev = document.querySelector(".btn-prev");
 
-let scrollPosition = 0;
+const proj = document.querySelectorAll(".card-projeto");
+
+let index = 0;
+const visibleCards = 3;
 
 next.addEventListener("click", () => {
-    scrollPosition += 320;
-    container.style.transform = `translateX(-${scrollPosition}px)`;
+    if(index < proj.length - visibleCards){
+        index++;
+        updateCarousel();
+    }
 });
 
 prev.addEventListener("click", () => {
-    scrollPosition -= 320;
-    if(scrollPosition < 0) scrollPosition = 0;
-    container.style.transform = `translateX(-${scrollPosition}px)`;
+    if(index > 0){
+        index--;
+        updateCarousel();
+    }
 });
+
+function updateCarousel(){
+    const cardWidth = cards[0].offsetWidth + 100;
+    container.style.transform = `translateX(-${index * cardWidth}px)`;
+
+    prev.style.opacity = index === 0 ? "0.3" : "1";
+    next.style.opacity = index >= cards.length - visibleCards ? "0.3" : "1";
+}

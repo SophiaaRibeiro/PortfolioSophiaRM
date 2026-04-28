@@ -397,6 +397,25 @@ h1{
 }
 
 /* CONHECIMENTOS */
+.card-conhecimento.front h3 span{
+    color: var(--azul-principal);
+}
+
+.card-conhecimento.back h3 span{
+    color: var(--roxo-principal);
+}
+
+.card-conhecimento.banco h3 span{
+    color: var(--azul-claro);
+}
+
+.card-conhecimento.gestao h3 span{
+    color: var(--roxo-secundario);
+}
+
+.card-conhecimento.ferramentas h3 span{
+    color: var(--roxo-escuro);
+}
 
 .conhecimentos{
     padding:120px 10%;
@@ -419,6 +438,8 @@ h1{
 
 .card-center{
     grid-column: 2 / 3;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-conhecimento:hover{
@@ -463,6 +484,16 @@ h1{
     position:relative;
     display:flex;
     align-items:center;
+    justify-content: center;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+
+.viewport{
+    overflow:hidden;
+    width: 100%;
+     
 }
 
 .carrossel{
@@ -473,18 +504,12 @@ h1{
 .container-projetos{
     display:flex;
     gap:20px;
-    transition:0.5s;
+    transition: transform 0.5s;
 }
 
 .projetos{
-    padding:120px 10%;
+    padding: 10px ;
     text-align:center;
-}
-
-.container-projetos{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
 }
 
 .card-projeto{
@@ -493,10 +518,11 @@ h1{
     border-radius:20px;
     padding:25px;
     text-align:left;
-    min-width:300px;
-    height: 100%;
+    /* min-width:300px; */
+    flex: 0 0 calc((130% - 40px) / 3);
+    height: auto;
     flex-shrink:0;
-    transition:0.3s;
+    /* transition:0.3s; */
 }
 
 .topo-card{
@@ -513,7 +539,7 @@ h1{
 }
 
 .card-projeto:hover{
-    transform:translateY(-8px);
+    /* transform:translateY(-8px); */
     box-shadow:0 0 25px rgba(120,100,255,0.3);
     z-index: 1000;
 }
