@@ -131,3 +131,36 @@ function updateCarousel(){
     prev.style.opacity = index === 0 ? "0.3" : "1";
     next.style.opacity = index >= cards.length - visibleCards ? "0.3" : "1";
 }
+
+const slides = document.querySelectorAll('.carousel-slide');
+const dots   = document.querySelectorAll('.dot');
+let current  = 0;
+let timer;
+
+function goTo(n) {
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current = (n + slides.length) % slides.length;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+}
+
+function startAuto() {
+  timer = setInterval(() => goTo(current + 1), 3000);
+}
+
+function stopAuto() {
+  clearInterval(timer);
+}
+
+document.getElementById('next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+document.getElementById('prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+
+document.getElementById('carousel').addEventListener('mouseenter', stopAuto);
+document.getElementById('carousel').addEventListener('mouseleave', startAuto);
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); });
+});
+
+startAuto();
