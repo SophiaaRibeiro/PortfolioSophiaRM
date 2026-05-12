@@ -698,7 +698,7 @@ h1{
     color:white;
 }
 
-/* .btn-prev, .btn-next{
+.btn-prev, .btn-next{
     background: var(--bg-principal);
     border:none;
     color: var(--bg-principal);
@@ -708,9 +708,9 @@ h1{
     border-radius:60%;
     position:absolute;
     z-index:10;
-} */
+}
 
-.btn-prev{ left:-50px; }
+/* .btn-prev{ left:-50px; }
 .btn-next{ right:-50px; }
 
 .btn-prev, .btn-next {
@@ -720,7 +720,7 @@ h1{
 }
 .btn-prev:hover, .btn-next:hover {
   background: var(--roxo-principal);
-}
+} */
 
 .icons i{
     margin:10px;
