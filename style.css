@@ -706,7 +706,7 @@ h1{
     padding:10px;
     cursor:pointer;
     border-radius:60%;
-    position:absolute;
+    /* position:absolute; */
     z-index:10;
 }
 
